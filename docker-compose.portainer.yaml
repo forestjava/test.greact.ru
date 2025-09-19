@@ -1,0 +1,11 @@
+services:
+  web:
+    build: .
+    expose:
+      - 3000
+    networks:
+      - proxy      
+
+networks:
+  proxy:
+    external: true  
